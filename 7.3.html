@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>靓女</title>
+
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' data: gap: https://blog.runwsh.com/ 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;script-src * 'unsafe-inline'">
+
+  <style>
+    @import url("./family.css");
+  </style>
+  <link rel="stylesheet" type="text/css" href="./demo.css">
+</head>
+
+<body>
+
+  <canvas id="c" style="position: absolute;z-index: -1;text-align: center;"></canvas>
+  <div class="middle">
+    <h1 class="label">Every Day About You</h1>
+    <div class="search">
+      <button class="bing" id="bing" style="opacity: 0;">必应一下</button>
+      <input id="input" type="text">
+      <button class="baidu" id="baidu" style="opacity: 0;">百度一下</button>
+    </div>
+    <h1 class="label" id="time"></h1>
+  </div>
+</body>
+
+</html>
+<script>
+  var date1 = new Date('2022-02-03')
+</script>
+<script type="text/javascript" src="./demo.js"></script>

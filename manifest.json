@@ -1,0 +1,38 @@
+{
+    "name": "RunWsh",
+    "description": "Every Day About You --RunWsh",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_icon": "Favicon.png"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "demo.js"
+            ],
+			"css":[
+			    "demo.css"
+			],
+            "run_at": "document_start"
+        }
+    ],
+    "chrome_url_overrides": {
+        "newtab": "demo.html"
+    },
+	"icons": { 
+    "16": "Favicon.png",
+    "48": "Favicon.png",
+    "128": "Favicon.png" 
+    },
+	"background": {
+    "service_worker": "demo.js"
+    },
+    "offline_enabled": true
+}
